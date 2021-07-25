@@ -33,7 +33,7 @@ function showInfo (json){
 	document.querySelector('.ventoInfo').innerHTML = `${json.windSpeed} <span>km/h</span>`;
 
 	document.querySelector('.temp img').setAttribute('src',`http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`);
-	document.querySelector('.ventoPonto').style.transform = `rotate(${json.windAngle - 90}deg)`;
+	document.querySelector('.ventoPonto').style.transform = `rotate(${json.windAngle -90}deg)`;
 	document.querySelector('.resultado').style.display = 'block';
 
 }
